@@ -1,6 +1,6 @@
 # OPC_Project_2
 
-This is a student project of the OpenClassroom web developer course which consists in transforming a model into a website with HTML & CSS
+This is an OpenClassroom Web Developer Course student project that involves turning a template into a website with HTML and CSS.
 
 ## Deliverables
 - [ ] An index.html file containing the HTML code of the project
