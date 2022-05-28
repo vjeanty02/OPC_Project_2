@@ -1,0 +1,17 @@
+  /* Footer */
+  
+  .footer {
+    background: #F2F2F2;
+    display: flex;
+  }
+
+  .footer-part {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    
+  }
+ 
+  
+
+  
