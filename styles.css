@@ -47,6 +47,12 @@ nav a:hover
     width: 70%;
 }
 
+/*recherches*/
+.flex
+{
+    display: flex;
+}
+
 /*Bar Style*/
 .bar{
     margin-left: 30px;
