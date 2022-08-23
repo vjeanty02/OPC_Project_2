@@ -7,7 +7,12 @@
 {
   font-size: 12px;
 }
-
+.border
+{
+    border: 1px solid red;
+    padding: 0px;
+    margin: 0px;
+}
   /*color*/
   .color-bleu {
     color: #0065fc;
@@ -32,7 +37,6 @@
     margin-right: 25px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
   }
 
 /*Header*/
@@ -95,6 +99,10 @@ header nav a:hover
 
 
 /*Recherche*/
+.section-recherche
+{
+    padding-top: 20px;
+}
 .section-recherche h3
 {
   margin: 0px;
@@ -238,12 +246,16 @@ header nav a:hover
 
 
 /*Hebergement et Populaire*/
+.section-hebergement-populaire
+{
+    padding-top: 10px;
+}
 .info-500logements-dispo
 {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px 0px;
+  padding-bottom: 20px;
 }
 .info-500logements-dispo i
 {
@@ -339,7 +351,7 @@ section a
 } 
 .categorie-hebergement h4, .categorie-hebergement p, .categorie-hebergement .star-hotel
 {
-  margin: 5px 10px;
+    margin: 5px 10px;
   padding: 0;
 }
 /*Populaire*/
@@ -600,55 +612,191 @@ section a
 }
 }
 
+
+/* Activites */
+.section-activite
+{
+    padding-top: 30px;
+}
+.activite-container
+{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cubes-container1,.cubes-container2,.cubes-container3,.cubes-container4
+{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 4);
+  height: 400px;
+  gap: 30px;
+}
+.cube-activite1
+{
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  border: 0.5px solid #f2f2f2;
+  box-shadow: 3px 3px 3px 1px lightgrey;
+  width: 100%;
+  height: 100%;
+}
+.cube-activite1:hover
+{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.cube-activite2
+{
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  border: 0.5px solid #f2f2f2;
+  box-shadow: 3px 3px 3px 1px lightgrey;
+  width: 100%;
+  height: calc(60% - 2px - 15px);
+}
+.cube-activite2:hover
+{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.cube-activite3
+{
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  border: 0.5px solid #f2f2f2;
+  box-shadow: 3px 3px 3px 1px lightgrey;
+  width: 100%;
+  height:  calc(40% - 2px - 15px);
+}
+
+.cube-activite3:hover
+{
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.activite-image {
+
+  object-fit:cover;
+  width: 100%;
+  height: calc(100% - 45px);
+  border-radius: 15px 15px 0 0;
+}
+
+.imageTittle
+{
+  padding-left: 30px;
+  font-weight: bold;
+}
+
+@media all and (min-width: 701px) and (max-width: 900px){
+  .activite-container
+  {
+    flex-wrap: wrap;
+  }
+  .cubes-container1,.cubes-container3
+{
+  flex-basis: calc(100% / 3 - 10px);
+  height: 200px;
+}
+  .cubes-container2,.cubes-container4
+{
+  flex-direction: row;
+  flex-basis: calc(100% * 2 / 3 - 20px);
+  height: 200px;
+}
+
+.cube-activite2,.cube-activite3
+{
+  height: 100%;
+}
+}
+
+@media all and (min-width: 501px) and (max-width: 701px){
+  
+  .activite-container
+  {
+    flex-wrap: wrap;
+  }
+  .cubes-container1,.cubes-container3
+{
+  flex-basis: calc(50% - 15px);
+  height: 200px;
+  order: -1;
+}
+  .cubes-container2,.cubes-container4
+{
+  flex-direction: row;
+  flex-basis: 100%;
+  height: 200px;
+}
+.cube-activite2,.cube-activite3
+{
+  width: 50%;
+  height: 100%;
+}
+}
+
+@media all and (min-width: 0px) and (max-width: 500px){
+  .activite-container
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .cubes-container1,.cubes-container2,.cubes-container3,.cubes-container4
+{
+  height: 200px;
+}
+ 
+.cube-activite1,.cube-activite2,.cube-activite3
+{
+  height:200px;
+}
+}
+
+
   
   /* Footer */
-  
+
   footer
   {
-      display: flex;
-      background-color: #f2f2f2;
+    display: flex;
+    gap: 50px;
+    background-color: #f2f2f2; 
+    margin-top: 50px;
+    padding: 40px 20px 40px 40px;
   }
   
-  footer p, footer ul
+  .container1,.container2,.container3
   {
-      font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    gap: 12px;
   }
-  
-  footer h1
+  .container1 h4,.container2 h4,.container3 h4
   {
-      font-size: 1.1em;
+   padding-bottom: 5px;
+   margin-bottom: 0;
+   padding-top: 0;
+   margin-top: 0;
   }
-  
-  .container
+  .container1
   {
-    width: 31%;
-    margin-left: 25px;
-    margin-top: 25px;
+    flex-shrink:0;
   }
-  .container ul
+ 
+  .container1 a,.container2 a,.container3 a
   {
-      list-style: none;
-      padding-left: 2px;
-  }
-  
-  .container a
-  {
-      text-decoration: none;
-      color: #000000;
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
   }    
-  
-  .container li
-  {
-    margin-bottom: 10px;
-    font-family: sans-serif;
-  }
-  
-  .couleurBleu
-  {
-      color: blue;
-  }
-  .marge
-  {
-      padding-left: 5%;
-      margin-right: 5%;
-  }
