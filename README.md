@@ -9,7 +9,5 @@ This is an OpenClassroom Web Developer Course student project that involves turn
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
 https://user-images.githubusercontent.com/61328054/186299242-aef5aeb9-ab86-4ce8-89bf-90731ae367e5.mp4
 
