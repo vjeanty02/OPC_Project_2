@@ -1,13 +1,13 @@
 # OPC_Project_2
 
-This is an OpenClassroom Web Developer Course student project that involves turning a template into a website with HTML and CSS.
+C'est un projet étudiant du parcours développeur web Openclassroom qui consiste à transformer une maquette en site web avec HTML et CSS.
 
-## Deliverables
-- [x] An index.html file containing the HTML code of the project
-- [x] A "CSS" folder containing the CSS style file (s) necessary for the project
-- [x] A “images” folder containing all the images used for the project.
+## Livrables
+- [x] Un fichier index.html qui contient le code html du projet 
+- [x] Un fichier style.css qui contient le code css du projet 
+- [x] Un dossier “images” qui contient les images du projet
 
-## Video Walkthrough
+## Video 
 
 https://user-images.githubusercontent.com/61328054/186299242-aef5aeb9-ab86-4ce8-89bf-90731ae367e5.mp4
 
