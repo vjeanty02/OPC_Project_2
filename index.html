@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="styles.css">
         <title>Booki</title>
         <script src="https://kit.fontawesome.com/7d76dabeae.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
 <header> <!-- Section_1 Header -->
-    <img id="logo" src="images/logo/Booki.png" alt="Logo de Booki"/>  
+    <picture id="logo">
+        <source media="(max-width: 768px)" srcset="Images_Booki/logo/Booki.png">
+        <source media="(min-width: 769px)" srcset="Images_Booki/logo/Booki@3x.png">
+        <img src="Images_Booki/logo/Booki.png" width="100" alt="Booki Logo">  
+    </picture>
     <nav>
        <a class="nav_component nav_lodging" href="#lodging">Hébergements</a>
        <a class="nav_component nav_activity" href="#activity">Activités</a>
@@ -32,12 +36,12 @@
         <div class="filter_sub">
             <h2 class="filter_heading-style2">Filtres</h2>
             <form class = "filter_border filter_border1"><i class="fa-solid fa-money-bill-wave filter_border-icon"></i><a>Économique</a></form>
-            <form class = "filter_border filter_border2"><img class="filter_border-icon2" src="person-solid.svg" width="15px"></img><a>Faminial</a></form>
+            <form class = "filter_border filter_border2"><img class="filter_border-icon2" src="person-solid.svg" alt="fml" width="15"><a>Faminial</a></form>
             <form class = "filter_border filter_border3"><i class="fa-solid fa-heart filter_border-icon"></i><a>Romantique</a></form>
             <form class = "filter_border filter_border4"><i class="fa-solid fa-dog filter_border-icon"></i><a>Animaux autorisés</a></form>
         </div>
         <div>
-            <form class = "search_border_i"><i class="fas fa-info fa-xs color-bleu"></i></form>
+            <form class = "search_border_i"><i class="fas fa-info fa-xs color-blue"></i></form>
             <p class="filter_paragraph-style1">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
@@ -47,9 +51,13 @@
         <div class="lodging_list">
             <a href="#">
                 <article class="lodging_card lodging_card1">
-                    <img class="lodging_img"
-                    src="images\hebergements\3_medium\marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-                    alt="image hebergements1">
+                    <picture>
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <source media="(min-width: 769px)" srcset="Images_Booki/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <source media="(max-width: 768px)" srcset="Images_Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                        <img class="lodging_img" src="Images_Booki/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image hebergements1">  
+                    </picture>
                     <h3 class="lodging_hotelName hotelName">Auberge La Cannebière</h3>
                     <p class="Lodging_hotelPrice hotelPrice">Nuit à partir de <span>25&euro;</span></p>
                     <div class="hotelStar">
@@ -63,9 +71,13 @@
             </a>
             <a href="#">
                 <article class="lodging_card lodging_card2">
-                    <img class="lodging_img"
-                    src="images\hebergements\3_medium\fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                    alt="image hebergements2">
+                    <picture>
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <source media="(min-width: 769px)" srcset="Images_Booki/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <source media="(max-width: 768px)" srcset="Images_Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                        <img class="lodging_img" src="Images_booki/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image hebergements2">
+                    </picture>
                     <h3 class="lodging_hotelName hotelName">Hôtel du port</h3>
                     <p class="Lodging_hotelPrice hotelPrice">Nuit à partir de <span>52&euro;</span></p>
                     <div class="hotelStar">
@@ -79,9 +91,13 @@
             </a>
             <a href="#">
                 <article class="lodging_card lodging_card3">  
-                    <img class="lodging_img"
-                    src="images\hebergements\3_medium\reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                    alt="image hebergements3">
+                    <picture>
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <source media="(min-width: 769px)" srcset="Images_Booki/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <source media="(max-width: 768px)" srcset="Images_Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                        <img class="lodging_img" src="Images_booki/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="image hebergements3">
+                    </picture>
                     <h3 class="lodging_hotelName hotelName">Hôtel les mouettes</h3>
                     <p class="Lodging_hotelPrice hotelPrice">Nuit à partir de <span>76&euro;</span></p>
                     <div class="hotelStar">
@@ -95,9 +111,13 @@
             </a> 
             <a href="#">
                 <article class="lodging_card lodging_card4">
-                    <img class="lodging_img"
-                    src="images\hebergements\3_medium\annie-spratt-Eg1qcIitAuA-unsplash.jpg"
-                    alt="image hebergements4">
+                    <picture>
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <source media="(min-width: 769px)" srcset="Images_Booki/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <source media="(max-width: 768px)" srcset="Images_Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                        <img class="lodging_img" src="Images_booki/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="image hebergements4">
+                    </picture>
                     <h3 class="lodging_hotelName hotelName">Auberge de la mer</h3>
                     <p class="Lodging_hotelPrice hotelPrice">Nuit à partir de <span>46&euro;</span></p>
                     <div class="hotelStar">
@@ -111,9 +131,13 @@
             </a>
             <a href="#">
                 <article class="lodging_card lodging_card5">
-                    <img class="lodging_img"
-                    src="images\hebergements\3_medium\nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
-                    alt="image hebergements5">
+                    <picture>
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <source media="(min-width: 769px)" srcset="Images_Booki/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <source media="(max-width: 768px)" srcset="Images_Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                        <img class="lodging_img" src="Images_booki/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="image hebergements5">
+                    </picture>
                     <h3 class="lodging_hotelName hotelName">Auberge le Panier</h3>
                     <p class="Lodging_hotelPrice hotelPrice">Nuit à partir de <span>23&euro;</span></p>
                     <div class="hotelStar">
@@ -127,9 +151,13 @@
             </a>
             <a href="#">
                 <article class="lodging_card lodging_card6">
-                    <img class="lodging_img"
-                    src="images\hebergements\3_medium\febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                    alt="image hebergements6">
+                    <picture>
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <source media="(min-width: 2400px)" srcset="Images_Booki/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <source media="(min-width: 769px)" srcset="Images_Booki/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <source media="(max-width: 768px)" srcset="Images_Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                        <img class="lodging_img" src="Images_booki/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="image hebergements6">
+                    </picture>
                     <h3 class="lodging_hotelName hotelName">Hôtel chez Amina</h3>
                     <p class="Lodging_hotelPrice hotelPrice">Nuit à partir de <span>96&euro;</span></p>
                     <div class="hotelStar">
@@ -153,16 +181,14 @@
         <div class="popular_list">
             <a href="#">
                 <article class="popular_card">
-                    <img class="popular_img"
-                    src="images\hebergements\3_medium\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                    alt="hotel populaire1"/>
+                    <img class="popular_img" src="Images_booki/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel populaire1">
                     <div class="popular_description">
                         <div class="popular_info">
                             <h4 class="hotelName">Hôtel Le soleil du matin</h4>
                             <p class="hotelPrice">Nuit à partir de <span>128&euro;</span></p>
                         </div>
                         <div class="hotelStar">
-                            <i class="fas fa-star color-bleu"></i>
+                            <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
@@ -173,16 +199,14 @@
             </a>
             <a href="#">
                 <article class="popular_card">
-                    <img class="popular_img"
-                    src="images\hebergements\3_medium\aw-creative-VGs8z60yT2c-unsplash.jpg"
-                    alt="hotel populaire2"/>
+                    <img class="popular_img" src="Images_booki/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hotel populaire2">
                     <div class="popular_description">
                         <div class="popular_info">
                             <h4 class="hotelName">Au coeur de l'eau Chambre d'hôte</h4>
                             <p class="hotelPrice">Nuit à partir de <span>71&euro;</span></p>
                         </div>
                         <div class="hotelStar">
-                            <i class="fas fa-star color-bleu"></i>
+                            <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
@@ -192,17 +216,15 @@
                 </article>
             </a>
             <a href="#">
-                <article class="popular_card">
-                    <img class="popular_img"
-                    src="images\hebergements\3_medium\febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                    alt="hotel populaire3"/>
+                <article class="popular_card">  
+                    <img class="popular_img" src="Images_booki/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel populaire3">
                     <div class="popular_description">
                         <div class="popular_info">
                             <h4 class="hotelName">Hôtel Tout bleu et Blanc</h4>
                             <p class="hotelPrice">Nuit à partir de <span>68&euro;</span></p>
                         </div>
                         <div class="hotelStar">
-                            <i class="fas fa-star color-bleu"></i>
+                            <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
                             <i class="fas fa-star color-blue"></i>
@@ -220,41 +242,57 @@
             <a href="#">
                 <article class = "activity_card1 activity_card-form"> 
                     <div>
-                        <img class = "activity_img" 
-                        src="images\activites\3_medium\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
-                        alt="Limage vieux Port"/>
+                        <picture>
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                            <source media="(min-width: 769px)" srcset="Images_Booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                            <source media="(max-width: 768px)" srcset="Images_Booki/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg">
+                            <img class="activity_img" src="Images_booki/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activity1">
+                        </picture>
                     </div>
-                    <p class = activity_imgTittle>Vieux Port</p>
+                    <h4 class = activity_imgTittle>Vieux Port</h4>
                 </article>
             </a>
             <a href="#">
                 <article class = "activity_card2 activity_card-form">
                     <div>
-                        <img class = "activity_img" 
-                        src="images\activites\3_medium\paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
-                        alt="Limage vieux Port"/>
+                        <picture>
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                            <source media="(min-width: 769px)" srcset="Images_Booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                            <source media="(max-width: 768px)" srcset="Images_Booki/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
+                            <img class="activity_img" src="Images_booki/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activity4">
+                        </picture>
                     </div>
-                    <p class = activity_imgTittle>Fort de Pomègues</p>
+                    <h4 class = activity_imgTittle>Fort de Pomègues</h4>
                 </article>
             </a>
             <a href="#">
                 <article class = "activity_card3 activity_card-form">
                     <div>
-                        <img class = "activity_img" 
-                        src="images\activites\3_medium\lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
-                        alt="Limage vieux Port"/>
+                        <picture>
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                            <source media="(min-width: 769px)" srcset="Images_Booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                            <source media="(max-width: 768px)" srcset="Images_Booki/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
+                            <img class="activity_img" src="Images_booki/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activity3">
+                        </picture>
                     </div>
-                    <p class = activity_imgTittle>îles du Frioul</p>
+                    <h4 class = activity_imgTittle>îles du Frioul</h4>
                 </article>
             </a>
             <a href="#">
                 <article class = "activity_card4 activity_card-form">
                     <div>
-                        <img class = "activity_img" 
-                        src="images\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
-                        alt="Limage vieux Port"/>
+                        <picture>
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                            <source media="(min-width: 2400px)" srcset="Images_Booki/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                            <source media="(min-width: 769px)" srcset="Images_Booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                            <source media="(max-width: 768px)" srcset="Images_Booki/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg">
+                            <img class="activity_img" src="Images_booki/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activity4">
+                        </picture>
                     </div>
-                    <p class = activity_imgTittle>Parc National des Calanques</p>
+                    <h4 class = activity_imgTittle>Parc National des Calanques</h4>
                 </article>
             </a>
         </div>

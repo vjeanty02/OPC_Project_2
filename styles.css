@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&display=swap');
 /*=============================================
 =            color            =
 =============================================*/
@@ -14,8 +13,11 @@
   --color-neutral-heading:#000;
   --color-neutral-paragraph:#000 ;
 }
-.color-bleu-clair {
-  color: #deebff;
+.color-blue {
+  color: #0065fc;
+}
+.color-gray {
+  color: gray;
 }
 /*=====  End of color  ======*/
 
@@ -23,6 +25,10 @@
 /*=============================================
 =            general            =
 =============================================*/
+.border 
+{
+  border: 1px solid red; 
+}
 * 
 {
   font-family: 'Raleway', "sans-serif";
@@ -103,13 +109,14 @@ main {
     flex-direction: column;
   }
 }
-@media all and (min-width: 0px) and (max-width: 760px){
+@media all and (min-width: 0px) and (max-width: 768px){
   body
   {
     padding: 20px 5px 0px 5px;
   }
 }
 /*=====  End of general  ======*/
+
 
 /*=============================================
 =            Header            =
@@ -120,7 +127,8 @@ header
 }
 #logo
 {
-  grid-area: 1 / 1 / 2 / 2
+  grid-area: 1 / 1 / 2 / 2;
+  padding:20px 0;
 }
 nav
 {
@@ -137,6 +145,7 @@ nav
   padding: 50px;
   color: var(--color-neutral-heading);
   border-top: 2px solid transparent;
+  transition: all 0.3s;
 }
 .nav_component:hover
 { 
@@ -150,7 +159,12 @@ nav
     grid-template-rows: auto;
     }
     #logo 
-    { grid-area: 1 / 1 / 2 / 2; }
+    { 
+      grid-area: 1 / 1 / 2 / 3; 
+      display: flex;
+      justify-content: center;
+    }
+  
     nav 
     { 
       grid-area: 2 / 1 / 3 / 3;
@@ -165,10 +179,11 @@ nav
   { 
     border-top: 2px solid transparent;
     border-bottom: 2px solid var(--color-1th);
-    color: var(--color-1th);  
+    color: var(--color-1th);   
   }
 }
 /*=====  End of Header  ======*/
+
 
 /*=============================================
 =            Search            =
@@ -208,6 +223,7 @@ nav
   padding: 15px 16px;
   font-weight: 700;
   font-size: 18px;
+  transition: all 0.3s;
 }
 .search_bar-button::after
 {
@@ -251,7 +267,7 @@ nav
     padding-top: 50px;
   }
 }
-@media all and (min-width: 501px) and (max-width: 760px){
+@media all and (min-width: 501px) and (max-width: 768px){
   .search_bar-button::after
   {
     display: none;    
@@ -267,6 +283,7 @@ nav
   }
 }
 /*=====  End of Search  ======*/
+
 
 /*=============================================
 =            Filter            =
@@ -293,10 +310,12 @@ nav
   padding: 12px 20px;
   gap: 10px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .filter_border:hover
 {
   background-color:var(--color-4th);
+  animation: shake 1s;
 }
 .filter_border-icon
 {
@@ -343,6 +362,7 @@ nav
 }
 /*=====  End of Filter  ======*/
 
+
 /*=============================================
 =            Lodging            =
 =============================================*/
@@ -380,12 +400,19 @@ nav
   background-color: white;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px lightgrey;
-  padding: 5px;   
+  padding: 5px;  
+  cursor: pointer; 
 }
 .lodging_card:hover
 {
-  cursor: pointer;
-  transform: scale(1.02);
+  animation: shake 1s;
+}
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 .lodging_img{
   object-fit: cover;
@@ -457,6 +484,7 @@ nav
   border-radius: 15px;
   box-shadow: 5px 5px 5px 1px lightgrey;
   padding: 5px;
+  cursor: pointer;
 }
 .popular_description
 {
@@ -474,8 +502,8 @@ nav
 }
 .popular_card:hover
 {
-  cursor: pointer;
-  transform: scale(1.02);
+
+  animation: shake 1s;
 }
 .popular_img
 {
@@ -547,7 +575,7 @@ nav
 }
 .activity_card-form:hover
 {
-  transform: scale(1.02);
+  animation: shake 1s;
 }
 .activity_img{
   object-fit:cover;
