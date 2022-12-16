@@ -14,10 +14,10 @@
   --color-neutral-paragraph:#000 ;
 }
 .color-blue {
-  color: #0065fc;
+  color: var(--color-1th);
 }
 .color-gray {
-  color: gray;
+  color: var(--color-2th);
 }
 /*=====  End of color  ======*/
 
@@ -101,7 +101,7 @@ main {
   .popular { grid-area: 3 / 3 / 4 / 4; }
   #activity { grid-area: 4 / 1 / 5 / 4; }
 
-  @media screen and (max-width: 1200px)
+@media screen and (max-width: 1200px)
 {
   main
   {
@@ -109,10 +109,32 @@ main {
     flex-direction: column;
   }
 }
-@media all and (min-width: 0px) and (max-width: 768px){
+
+@media screen and (max-width: 768px)
+{
+  main
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .popular
+  {
+    order: 1;
+  }
+  #lodging
+  {
+    order: 2;
+  }
+  #activity
+  {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
   body
   {
-    padding: 20px 5px 0px 5px;
+    padding: 20px 0px 0px 0px;
   }
 }
 /*=====  End of general  ======*/
@@ -184,7 +206,6 @@ nav
 }
 /*=====  End of Header  ======*/
 
-
 /*=============================================
 =            Search            =
 =============================================*/
@@ -252,7 +273,7 @@ nav
 {
   border: 2px solid var(--color-3th);
 }
-@media all and (min-width: 0px) and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .search_bar-button::after
   {
     display: none;    
@@ -280,6 +301,22 @@ nav
   {
     font-size: 20px;
     padding-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) 
+{
+  .search
+  {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .search_bar
+  {
+    padding-top: 25px;
+  }
+  .search_bar input
+  {
+    width: 100%;
   }
 }
 /*=====  End of Search  ======*/
@@ -339,7 +376,7 @@ nav
   padding: 3px 10px;
   color: var(--color-1th);
 }
-@media all and (min-width: 475px) and (max-width: 950px){
+@media all and (min-width: 475px) and (max-width: 992px){
   div.filter_sub
   {
     display: grid;
@@ -347,17 +384,25 @@ nav
     grid-template-rows: auto;
   }
   .filter_heading-style2 { grid-area: 1 / 1 / 2 / 3; }
-  .filter_border2 { grid-area: 2 / 1 / 3 / 2; }
-  .filter_border3 { grid-area: 2 / 2 / 3 / 3; }
-  .filter_border4 { grid-area: 3 / 1 / 4 / 2; }
-  .filter_border5 { grid-area: 3 / 2 / 4 / 3; }
+  .filter_border1 { grid-area: 2 / 1 / 3 / 2; }
+  .filter_border2 { grid-area: 2 / 2 / 3 / 3; }
+  .filter_border3 { grid-area: 3 / 1 / 4 / 2; }
+  .filter_border4 { grid-area: 3 / 2 / 4 / 3; }
 }
-@media all and (min-width: 0px) and (max-width:475px){
+@media screen and (max-width: 475px) {
   div.filter_sub
   {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+@media screen and (max-width: 768px) 
+{
+  .filter
+  {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 /*=====  End of Filter  ======*/
@@ -430,6 +475,15 @@ nav
 }
 @media all and (min-width:551px) and (max-width: 768px)
 {
+  #lodging
+  {
+    background-color: transparent;
+    padding: 0 25px;
+  }
+  .lodging_more
+  {
+    display: none;
+  }
   .lodging_list
   {
     grid-template-columns: repeat(2, 1fr);
@@ -442,12 +496,21 @@ nav
   .lodging_card5 { grid-area: 3 / 1 / 4 / 2; }
   .lodging_card6 { grid-area: 3 / 2 / 4 / 3; }
 }
-@media all and (min-width:0px) and (max-width: 550px)
+@media screen and (max-width: 550px) 
 {
   .lodging_list
   {
     display: flex;
     flex-direction: column;
+  }
+  #lodging
+  {
+    background-color: transparent;
+    padding: 0 25px;
+  }
+  .lodging_more
+  {
+    display: none;
   }
 } 
 
@@ -529,7 +592,7 @@ nav
     flex-direction: column;
   }
 }
-@media all and (min-width:0px) and (max-width: 450px)
+@media screen and (max-width: 450px)
 {
   .popular_card
   {
@@ -541,6 +604,13 @@ nav
     max-width: 100%;
     width: 100%;
     border-radius: 15px 15px 0 0;
+  }
+}
+@media screen and (max-width: 768px) 
+{
+  .popular
+  {
+    border-radius: 0px;
   }
 }
 /*=====  End of Popular  ======*/
@@ -580,7 +650,7 @@ nav
 .activity_img{
   object-fit:cover;
   width: 100%;
-  height:350px;
+  height:385px;
   border-radius: 15px 15px 0 0;
 }
 .activity_imgTittle
@@ -614,7 +684,7 @@ nav
     height: 150px;
   }
 }
-@media all and (min-width:0px) and (max-width:650px)
+@media screen and (max-width: 650px) 
 {
   .activity_list
   {
@@ -626,12 +696,19 @@ nav
     height: 150px;
   }
 }
+@media screen and (max-width: 768px) 
+{
+  #activity
+  {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 /*=====  End of Activity  ======*/
 
 /*=============================================
 =            Footer            =
 =============================================*/
-
 footer
 {
   display: flex;
@@ -664,7 +741,7 @@ footer
   font-weight: 400;
   font-size: 1rem;
 }    
-@media all and (min-width: 0px) and (max-width: 768px)
+@media screen and (max-width: 768px) 
 {
   footer
   {
