@@ -15,8 +15,10 @@ Ce projet est le deuxième projet du parcours Développeur web chez OpenClassroo
 Pour installer le projet, il suffit de cloner le dépôt github et d'ouvrir le fichier index.html dans un navigateur web.
 
 ## Voir le site
+
 :point_right: https://vjeanty02.github.io/OPC_Project_2/
 
 ## Video
+
 https://user-images.githubusercontent.com/61328054/186299242-aef5aeb9-ab86-4ce8-89bf-90731ae367e5.mp4
 
