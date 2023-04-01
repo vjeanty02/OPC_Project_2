@@ -1,8 +1,6 @@
 # OPC_Project_2
 
-Ce projet est le deuxième projet du parcours Développeur web chez OpenClassrooms.
-
-Le but est de transformer une maquette en site web responsive.
+Ce projet est le deuxième projet du parcours Développeur web chez OpenClassrooms. Le but est de transformer une maquette en site web responsive.
 
 ## Fonctionnalités
 
